@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>task-4登陆</title>
+</head>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Micorsoft-Yahei;
+	font-size: 62.5%;
+	min-width: 320px;
+	background: #eff0f4;
+}
+header{
+	text-align: center;
+	color: white;
+	background: #5fc0cd;
+}
+span{
+	display: inline-block;
+	font-size: 3.5rem;
+	line-height: 5.4rem;
+}
+.left{
+	float: left;
+	font-size: 3rem;
+	line-height: 5.4rem;
+	padding-left: 2%;
+}
+.right{
+	float: right;
+	font-size: 3rem;
+	line-height: 5rem;
+	padding-right: 2%;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+form ul{
+	list-style-type: none;
+	padding-bottom: 5rem;
+}
+form ul li{
+	padding: 20px 0;
+	background: white;
+	margin-top: 1.5rem;
+}
+label{
+	display: inline-block;
+	padding: 0 10% 0 8%;
+	width: 5%;
+	text-align: center;
+	vertical-align: middle;
+}
+.line{
+	display: inline-block;
+	border: 0;
+	border-left: 2px solid #eff0f4;
+	height: 4.5rem;
+	vertical-align: middle;
+}
+input{
+	width: 60%;
+	font-size: 3rem;
+	line-height: 5.4rem;
+	vertical-align: middle;
+	outline: medium;/*去掉点击输入时，显示的边框*/
+	border: none;
+	vertical-align: middle;/*表单控件上下居中对齐*/
+	/*border-left: 2px solid #eff0f4;*/
+	text-indent: 2rem;
+}
+button{
+	width: 100%;
+	color: white;
+	background: #5fc0cd;
+	font-size: 3.5rem;
+	padding: 1.5rem;
+	border: 0;
+}
+button a{
+	letter-spacing: 2rem;
+}
+footer a{
+	float: right;
+	font-size: 3rem;
+	color: #5fc0cd;
+	line-height: 5.4rem;
+}
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+}
+</style>
+<body>
+	<header>
+		<span>登陆</span>
+		<p class="left"><a href="">关闭</a></p>
+		<p class="right"><a href="">注册</a></p>
+	</header>
+	<form action="">
+		<ul class="list">
+			<li>
+				<label for="user-name"><img src="http://okhe2dmwo.bkt.clouddn.com/nametask4.png" alt="iphone"></label>
+				<span class="line"></span>
+				<input type="tel" id="user-name" name="user" maxlength="11" placeholder="请输入手机号">
+			</li>
+			<li>
+				<label for="password"><img src="http://okhe2dmwo.bkt.clouddn.com/passwordtask4.png" alt="locked"></label>
+				<span class="line"></span>
+				<input type="password" id="password" name="pass" placeholder="请输入密码">
+			</li>
+		</ul>
+		<button type=""><a href="">登陆</a></button>
+	</form>
+	<footer>
+		<a href="">忘记密码？</a>
+	</footer>
+</body>
+</html>
